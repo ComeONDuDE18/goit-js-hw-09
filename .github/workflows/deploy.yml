@@ -6,7 +6,6 @@ on:
       - main
 
 jobs:
-
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -14,8 +13,9 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Deploy to GitHub Pages
-        uses: jamesives/github-pages-deploy-action@latest
+        uses: jamesives/github-pages-deploy-action@v4.1.0
         with:
-          branch: gh-pages # Гілка для розгортання
-          folder: dist # Папка для розгортання
+          branch: gh-pages  # Вкажіть гілку для розгортання
+          folder: dist      # Вкажіть папку для розгортання
+
 
