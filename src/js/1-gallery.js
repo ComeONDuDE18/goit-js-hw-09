@@ -85,6 +85,7 @@ const galleryItemsMarkup = images
   })
   .join('');
 
+  
 galleryUl.innerHTML = galleryItemsMarkup;
 
 const lightbox = new SimpleLightbox('.gallery a', {
